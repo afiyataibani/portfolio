@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+::selection {
+    color: white;
+    background: #ffc107;
+  }
+/* Header */
+
+header .navigation:hover{
+    color: #ffc107;
+}
+
+/* Main-Banner */
+
+#bg{
+    background: linear-gradient(80deg, orange 20%, black 20%);
+    min-height: 100vh;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.open-sans-font{
+    font-family: 'Open Sans Condensed';
+}
+
+.home .home-details h1::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 45px;
+    height: 4px;
+    width: 40px;
+    border-radius: 10px;
+    background-color:  #ffc107;
+
+}
+
+/* About */
+
+.about h2::before{
+    position:absolute;
+}
+
+.main-content .box-stats {
+    padding: 20px 30px 25px 40px;
+    border-radius: 5px;
+    border: 1px solid #252525;
+}
+
+.main-content .box-stats h2:after {
+    content: "+";
+    position: absolute;
+    font-size: 38px;
+    font-weight: 500;
+    bottom: 17px;
+    color:#ffc107;
+}
+
+.main-content .box-stats p:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 30px;
+    height: 1px;
+    background: #777;
+}
+
+.main-content .box-stats h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+/* Skills */
+
+.progress-bar{
+    animation:load 3s normal forwards !important;
+}
+
+@keyframes load{
+    0% { width: 0; }
+    75% {width: 75% }
+}
+
+/* Education */
+
+.education .time {
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 10px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #252525;
+    opacity: .8;
+}
+
+.education .aa:before {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50px;
+    left:-18px;
+    top: 0;
+    background: #ffc107;
+    border: 2px solid #ffc107 ;
+    z-index:80;
+}
+
+.education .icon{
+    left:-7px;
+    top: 5px;
+    z-index:99;
+}
+
+/* Portfolio */
+
+.card:hover .overlay{
+    opacity: 1 !important;
+    background-color: wheat;
+    transition: 0.5s linear;
+    border-radius: 3px;
+}
+
+.card:hover{
+    opacity:1 !important;
+}
+
+
+/* Contact */ 
+
+.contact i::before{
+    font-size:33px;
+    color:#ffc107;
+    top:10px;
+    left:0;
+}
+
+.contactus .contactform .form-group {
+    margin-bottom: 30px;
+}
+
+.contactus .contactform input[type=email], .contactus .contactform input[type=text] {
+    border: 1px solid #111;
+    width: 100%;
+    background: #252525;
+    color: #fff;
+    padding: 11px 26px;
+    border-radius: 30px;
+    outline: none!important;
+    transition: .3s;
+}
+
+.contactus .contactform textarea {
+    border: 1px solid #111;
+    background: #252525;
+    color: #fff;
+    width: 100%;
+    padding: 12px 26px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 30px;
+    outline: none!important;
+    transition: .3s;
+}
+
+.button {
+    overflow: hidden;
+    line-height: 1.4;
+    border-radius: 35px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    padding: 16px 70px 16px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    outline: none!important;
+    cursor: pointer!important;
+    border: 1px solid #ffc107;
+}
+
+
+.button-icon {
+    right: -1px;
+    top: -1px;
+    bottom: 0;
+    width: 55px;
+    height: 55px;
+    font-size: 19px;
+    border-radius: 50%;
+    background-color: #ffc107;
+}
+
+/* Background-Title */
+
+.title-bg {
+    font-size: 130px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: hsla(0,0%,100%,.07);
+}
